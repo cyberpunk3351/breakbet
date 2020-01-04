@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title= title
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1")
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.2.0/css/all.css', integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ', crossorigin='anonymous')
+    link(href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
+    //- link(rel="stylesheet" href="/css/all.css") 
+    //- link(rel="stylesheet" href="/css/font-awesome.css") 
+    link(rel="stylesheet" href="/css/main.min.css") 
+    //- link(rel='stylesheet', href='css/slider.css')
+    //- script(type='text/javascript', src='js/modernizr.custom.28468.js')
+    block head_end
+	
+  body
+    include ../modules/header/header
+    include ../modules/nav/nav
+    .content
+      block content
+		
+    script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+    //- script(type='text/javascript', src='js/jquery.cslider.js')
+    //- script(type='text/javascript', src='js/slider.js')
+
+    block body_end

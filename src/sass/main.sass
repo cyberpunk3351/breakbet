@@ -1,0 +1,32 @@
+@import '_mixins/fonts.scss'
+@import 'color.sass'
+
+@include font-face(Lato-Regular, "../fonts/Lato-Regular")
+@include font-face(Lato-Black, "../fonts/Lato-Black")
+$default-font: Lato-Regular
+$black-font: Lato-Black
+
+*
+    padding: 0
+    margin: 0
+
+html
+    color: $text
+    font-family: $default-font
+    font-size: 1em
+    line-height: 1.4
+    background-image: url("../imgs/bg-camouflage.jpg")
+
+.wrapper
+    width: 100%
+
+.containers
+    width: 1200px
+    padding-right: 15px
+    padding-left: 15px
+    margin-right: auto
+    margin-left: auto
+
+@import '../pug/modules/header/header'
+@import '../pug/modules/nav/nav'
+@import '../pug/modules/content/content'
