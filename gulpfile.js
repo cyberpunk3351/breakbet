@@ -44,12 +44,12 @@ gulp.task('gcmq', async function () {
 });
 
 gulp.task('copy-img', function() {
-    return gulp.src('./src/img/*.*')
+    return gulp.src('./src/img/**/*.*')
         .pipe(gulp.dest('./dist/imgs'));
 });
 
 gulp.task('copy-css', function() {
-    return gulp.src('./src/css/*.*')
+    return gulp.src('./src/css/**/*.*')
         .pipe(gulp.dest('./dist/css'));
 });
 
@@ -57,12 +57,17 @@ gulp.task('copy-font', function() {
     return gulp.src('./src/fonts/**/*.{woff,woff2,eot}')
         .pipe(gulp.dest('./dist/fonts'));
 });
+gulp.task('copy-js', function() {
+    return gulp.src('./src/js/**/*.*')
+        .pipe(gulp.dest('./dist/js'));
+});
 
 gulp.task('watch', function() {
     gulp.watch(['src/sass/**/*.sass', './src/pug/modules/**/*.sass'], gulp.parallel('styles'));
     gulp.watch(['src/css/main.min.css'], gulp.parallel('gcmq'));
 	gulp.watch('src/pug/**/*.pug', gulp.parallel('pug'));
 	gulp.watch('src/css/**/*.css', gulp.parallel('copy-css'));
+	gulp.watch('src/js/**/*.js', gulp.parallel('copy-js'));
 	gulp.watch('src/img/**/*.{jpg,png,svg}', gulp.parallel('copy-img'));
 	gulp.watch('src/fonts/**/*.{woff,woff2,eot}', gulp.parallel('copy-font'));
 });
