@@ -1,7 +1,7 @@
 extends layouts/home
 
 block head_end
-	link(rel='stylesheet', href='https://cdn.bootcss.com/Glide.js/2.1.0/css/glide.core.min.css')
+	link(rel='stylesheet', href='/css/glide/glide.core.min.css')
 	link(rel="stylesheet" href="/css/glide/arrow.css") 
 	link(rel="stylesheet" href="/css/main.min.css") 
 
@@ -9,5 +9,5 @@ block content
 	include ./modules/content/content
 
 block body_end
-	script(src='https://cdn.jsdelivr.net/npm/glidejs@2/dist/glide.min.js')
+	script(src='/js/glide.min.js')
 	script(src='/js/glide.js')
