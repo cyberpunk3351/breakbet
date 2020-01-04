@@ -64,6 +64,12 @@ header .header {
   background-color: #222831;
 }
 
+@media screen and (max-width: 1200px) {
+  .content .containers {
+    width: 100%;
+  }
+}
+
 .contetn {
   display: -webkit-box;
   display: -ms-flexbox;
