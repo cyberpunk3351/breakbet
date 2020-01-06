@@ -3,21 +3,52 @@
         display: flex
         flex-direction: row
         justify-content: space-between
-        // height: 300px
+        height: 600px
         // background-color: #d43442
         margin-top: 0
         padding-top: 16px
     .info--left
         width: 870px
-        .info--left-bar
+        border-right: 1px solid $border-bottom
+        
+        &-bar
             width: 100%
             height: 32px
-            background-color: $main-color
+            background-color: $main-color            
+        &-shortStory
+            display: flex
+            padding-top: 16px
+            padding-bottom: 16px
+            padding-right: 32px
+            border-bottom: 1px solid $border-bottom
+            &-author
+                // line-height: 18px
+                span 
+                    font-size: 12px
+                    
+                // display: flex
+                // flex-direction: columns
+                p 
+                    padding-top: 16px
+                    line-height: 1.4
+        img
+            width: 170px
+            height: 150px
+            padding-right: 15px
     .info--right
         width: 270px
-        .info--right-bar
+        &-bar
             width: 100%
             height: 32px
             background-color: $dark-secod
+
+.readMore
+    width: 150px
+    height: 32px
+    background-color: $main-color
+    text-align: center
+    padding: 5px
+    margin-top: 16px
+    font-weight: bold
 
     
