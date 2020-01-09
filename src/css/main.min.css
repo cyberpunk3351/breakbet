@@ -198,6 +198,10 @@ header .header {
   margin-top: 16px;
 }
 
+.single-page .containers .single-left {
+  width: 870px;
+}
+
 .theheader {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -209,7 +213,6 @@ header .header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 870px;
 }
 
 .theheader__text {
@@ -219,6 +222,15 @@ header .header {
 .theheader__text__date {
   width: 100%;
   background-color: #00ADB5;
+}
+
+.theheader__text__date h1 {
+  font-size: 40px;
+  padding-left: 15px;
+}
+
+.theheader__text__author {
+  padding-top: 16px;
 }
 
 .theheader__text--bread {
