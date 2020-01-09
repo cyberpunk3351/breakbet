@@ -197,3 +197,32 @@ header .header {
           justify-content: space-between;
   margin-top: 16px;
 }
+
+.theheader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 870px;
+}
+
+.theheader__text {
+  width: 585px;
+}
+
+.theheader__text__date {
+  width: 100%;
+  background-color: #00ADB5;
+}
+
+.theheader__text--bread {
+  width: 870px;
+  height: 32px;
+  background-color: #222831;
+}
