@@ -149,11 +149,11 @@ header .header {
   border-bottom: 1px solid #B6B9B8;
 }
 
-.information .info__left_shortStory-author span {
+.information .info__left_shortStory_author span {
   font-size: 12px;
 }
 
-.information .info__left_shortStory-author p {
+.information .info__left_shortStory_author p {
   padding-top: 16px;
   line-height: 1.4;
 }
