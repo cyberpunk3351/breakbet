@@ -1,6 +1,9 @@
 .contetn
   display: flex
-  flex-direction: row
+  flex-direction: columns
+
+.contetnImg
+  height: auto
 
 .text
   color: #EFEFEF
@@ -20,8 +23,12 @@
 @media screen and (max-width: 1200px)
   .glide
     width: 100%
-
-  .contetn 
-    display: flex
-    flex-direction: column
-  
+    .contetn
+      display: block
+    .contetnImg
+      height: auto
+      img 
+        width: 100%
+        height: 100%
+    .text
+      padding-bottom: 16px
