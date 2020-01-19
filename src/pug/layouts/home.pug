@@ -13,13 +13,14 @@ html
     block head_end
 	
   body
-    include ../modules/header/header
+    include ../modules/preloader/preloader
+    include ../modules/header/header    
     include ../modules/nav/nav
     .content
       block content
 		
     script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
     //- script(type='text/javascript', src='js/jquery.cslider.js')
-    //- script(type='text/javascript', src='js/slider.js')
+    script(type='text/javascript', src='js/preloader.js')
 
     block body_end
