@@ -8,19 +8,21 @@ html
     link(href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
     //- link(rel="stylesheet" href="/css/all.css") 
     //- link(rel="stylesheet" href="/css/font-awesome.css") 
-        //- link(rel='stylesheet', href='css/slider.css')
+    //- link(rel='stylesheet', href='css/slider.css')
     //- script(type='text/javascript', src='js/modernizr.custom.28468.js')
     block head_end
 	
   body
     include ../modules/preloader/preloader
-    include ../modules/header/header    
+    include ../modules/header/header
     include ../modules/nav/nav
     .content
       block content
 		
     script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+    script(type='text/javascript', src='js/nprogress.js')
     //- script(type='text/javascript', src='js/jquery.cslider.js')
-    script(type='text/javascript', src='js/preloader.js')
+    //- script(type='text/javascript', src='js/preloader.js')
+    script(type='text/javascript', src='js/preloader02.js')
 
     block body_end
